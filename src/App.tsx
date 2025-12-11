@@ -8,6 +8,7 @@ import { Contact } from './components/Contact';
 import { AIVersion } from './components/AIVersion';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { CaseStudyPage } from './pages/CaseStudyPage';
+import { RutaSVCaseStudyPage } from './pages/RutaSVCaseStudyPage';
 
 function HomePage() {
   const [selectedVersion, setSelectedVersion] = useState<'human' | 'ai'>('human');
@@ -49,6 +50,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/mobile-banking" element={<CaseStudyPage />} />
+        <Route path="/projects/ruta-sv" element={<RutaSVCaseStudyPage />} />
       </Routes>
     </Router>
   );

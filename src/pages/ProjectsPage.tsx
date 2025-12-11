@@ -5,6 +5,17 @@ import { Link } from 'react-router-dom';
 const projectsData = [
   {
     id: 1,
+    title: 'Ruta SV: Digital Wayfinding',
+    client: 'Public Transit Initiative',
+    period: 'Jan - Apr 2024',
+    description: 'Designed El Salvador\'s first comprehensive digital wayfinding system for public transportation',
+    metric: '42 user interviews',
+    details: 'Offline-first mobile app helping millions navigate Salvadoran bus systems with route planning, cost calculation, and real-time tracking.',
+    color: 'from-blue-600 to-cyan-500',
+    link: '/projects/ruta-sv',
+  },
+  {
+    id: 2,
     title: 'Mobile Banking Redesign',
     client: 'FinTech Solutions',
     period: 'Jan - Jun 2023',
@@ -15,7 +26,7 @@ const projectsData = [
     link: '/projects/mobile-banking',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Investment Dashboard',
     client: 'Banco Digital',
     period: 'Mar - Jul 2023',
@@ -26,7 +37,7 @@ const projectsData = [
     link: '/projects',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Onboarding Flow',
     client: 'StartUp Finance',
     period: 'Sep - Nov 2022',
