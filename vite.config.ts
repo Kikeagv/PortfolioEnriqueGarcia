@@ -52,6 +52,18 @@
     build: {
       target: 'esnext',
       outDir: 'build',
+      minify: 'esbuild',
+      sourcemap: false,
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            vendor: ['react', 'react-dom'],
+            radix: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-navigation-menu'],
+            ui: ['motion', 'lucide-react', 'tailwind-merge', 'clsx']
+          }
+        }
+      }
     },
     server: {
       port: 3000,
